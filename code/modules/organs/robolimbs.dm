@@ -17,7 +17,7 @@ var/datum/robolimb/basic_robolimb
 	var/unavailable_at_chargen                           // If set, not available at chargen.
 	var/unavailable_at_fab                               // If set, cannot be fabricated.
 	var/can_eat
-	var/use_eye_icon = "eyes_s"
+	var/use_eye_icon = "blank_eyes"
 	var/can_feel_pain
 	var/skintone
 	var/list/species_cannot_use = list()
@@ -29,12 +29,14 @@ var/datum/robolimb/basic_robolimb
 	desc = "This limb has a white polymer casing with blue holo-displays."
 	icon = 'icons/mob/human_races/cyberlimbs/bishop/bishop_main.dmi'
 	unavailable_at_fab = 1
+	use_eye_icon = "eyes_s"
 
 /datum/robolimb/bishop/alt
 	company = "Bishop Alt."
 	icon = 'icons/mob/human_races/cyberlimbs/bishop/bishop_alt.dmi'
 	applies_to_part = list(BP_HEAD)
 	unavailable_at_fab = 1
+	use_eye_icon = "optics_bishop_alt"
 
 /datum/robolimb/bishop/alt/monitor
 	company = "Bishop Monitor."
@@ -47,6 +49,7 @@ var/datum/robolimb/basic_robolimb
 	desc = "This limb has a militaristic black and green casing with gold stripes."
 	icon = 'icons/mob/human_races/cyberlimbs/hephaestus/hephaestus_main.dmi'
 	unavailable_at_fab = 1
+	use_eye_icon = "eyes_s"
 
 /datum/robolimb/hephaestus/alt
 	company = "Hephaestus Alt."
@@ -67,18 +70,21 @@ var/datum/robolimb/basic_robolimb
 	icon = 'icons/mob/human_races/cyberlimbs/zenghu/zenghu_main.dmi'
 	can_eat = 1
 	unavailable_at_fab = 1
+	use_eye_icon = "eyes_s"
 
 /datum/robolimb/xion
 	company = "Xion"
 	desc = "This limb has a minimalist black and red casing."
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_main.dmi'
 	unavailable_at_fab = 1
+	use_eye_icon = "eyes_s"
 
 /datum/robolimb/xion/alt
 	company = "Xion Alt."
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_alt.dmi'
 	applies_to_part = list(BP_HEAD)
 	unavailable_at_fab = 1
+	use_eye_icon = "optics_xion_alt"
 
 /datum/robolimb/xion/alt/monitor
 	company = "Xion Monitor."
@@ -91,6 +97,7 @@ var/datum/robolimb/basic_robolimb
 	company = "NanoTrasen"
 	desc = "This limb is made from a cheap polymer."
 	icon = 'icons/mob/human_races/cyberlimbs/nanotrasen/nanotrasen_main.dmi'
+	use_eye_icon = "eyes_s"
 
 /datum/robolimb/wardtakahashi
 	company = "Ward-Takahashi"
@@ -98,12 +105,14 @@ var/datum/robolimb/basic_robolimb
 	icon = 'icons/mob/human_races/cyberlimbs/wardtakahashi/wardtakahashi_main.dmi'
 	can_eat = 1
 	unavailable_at_fab = 1
+	use_eye_icon = "eyes_s"
 
 /datum/robolimb/wardtakahashi/alt
 	company = "Ward-Takahashi Alt."
 	icon = 'icons/mob/human_races/cyberlimbs/wardtakahashi/wardtakahashi_alt.dmi'
 	applies_to_part = list(BP_HEAD)
 	unavailable_at_fab = 1
+	use_eye_icon = "optics_wardtakahashi_alt"
 
 /datum/robolimb/wardtakahashi/alt/monitor
 	company = "Ward-Takahashi Monitor."
@@ -125,6 +134,7 @@ var/datum/robolimb/basic_robolimb
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_alt.dmi'
 	applies_to_part = list(BP_HEAD)
 	unavailable_at_fab = 1
+	use_eye_icon = "optics_morpheus_alt"
 
 /datum/robolimb/veymed
 	company = "Vey-Med"
@@ -133,3 +143,4 @@ var/datum/robolimb/basic_robolimb
 	can_eat = 1
 	skintone = 1
 	unavailable_at_fab = 1
+	use_eye_icon = "eyes_s"

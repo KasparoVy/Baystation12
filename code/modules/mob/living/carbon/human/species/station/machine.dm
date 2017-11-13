@@ -39,7 +39,7 @@
 
 	flags = NO_SCAN | NO_PAIN | NO_POISON
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_LACE
-	appearance_flags = HAS_UNDERWEAR //IPCs can wear undies too :(
+	appearance_flags = HAS_UNDERWEAR | HAS_EYE_COLOR // IPCs can wear undies too :(
 
 	blood_color = "#1f181f"
 	flesh_color = "#575757"
@@ -55,7 +55,7 @@
 	has_limbs = list(
 		BP_CHEST =  list("path" = /obj/item/organ/external/chest),
 		BP_GROIN =  list("path" = /obj/item/organ/external/groin),
-		BP_HEAD =   list("path" = /obj/item/organ/external/head/no_eyes),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head),
 		BP_L_ARM =  list("path" = /obj/item/organ/external/arm),
 		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right),
 		BP_L_LEG =  list("path" = /obj/item/organ/external/leg),
