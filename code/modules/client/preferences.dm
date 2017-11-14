@@ -301,6 +301,7 @@ datum/preferences
 				O.markings[M] = list("color" = mark_color, "datum" = mark_datum)
 
 	character.force_update_limbs()
+	character.update_eyes()
 	character.update_mutations(0)
 	character.update_body(0)
 	character.update_underwear(0)
